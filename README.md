@@ -8,12 +8,18 @@ Non-static, instantiable Simplex noise implementation offering 1D, 2D, and 3D fo
 ![Simplex noise 3D graph](https://github.com/dclipca/simplex/blob/main/simplex.png)
 
 ### Quick Start
+```
+var noise = new Simplex.Noise();
+noise.Seed = 37378483925; // Optional
 
-    Simplex.Noise.Seed = 209323094; // Optional
-    int length = 10, width = 15;
-    float scale = 0.10f;
-    float[,] noiseValues = Simplex.Noise.Calc2D(length, width, scale);
+// Batch calculation
+int length = 10, width = 15;
+float scale = 0.10f;
+float[,] noiseValues = noise.Calc2D(length, width, scale);
 
+// Pixel calculation
+var noiseValue = noise.CalcPixel2D(0, 0, scale);
+```
 
 ### API
 
