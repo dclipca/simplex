@@ -5,6 +5,8 @@ Non-static, class-based instantiable Simplex Noise implementation offering 1D, 2
 [![Nuget](https://img.shields.io/nuget/v/Simplex.svg?logo=nuget)](https://www.nuget.org/packages/Simplex/2.0.5)
 [![Nuget](https://img.shields.io/nuget/dt/Simplex.svg)](https://www.nuget.org/packages/Simplex/2.0.5)
 
+![Simplex noise 3D graph](https://github.com/dclipca/simplex/blob/main/simplex.png)
+
 ### Quick Start
 
     Simplex.Noise.Seed = 209323094; // Optional
